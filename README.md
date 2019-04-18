@@ -5,7 +5,7 @@ The purpose of this project is to review sessions and show the need for session 
 ## Guide
 
 - The **master** branch holds the beginning state of our app. 
-- The **sessions** branch holds the completed state of our app, with sessions added.
+- The **sessions** branch holds the completed state of our app, with sessions added. For the sake of example, our SECRET is not kept in an *.env* file, however you should create an *.env* file and store the SECRET there.
 
 1. Run `npm i` and `npm start` 
 2. Allow students to connect to your development server via the local ip address (e.g. *http://192.168.1.153:3000/*).
