@@ -5,7 +5,13 @@ module.exports = {
     res.status(200).send(messages)
   },
   addMessage(req, res) {
-    messages.unshift(req.body.message)
-    res.status(200).send(messages)
+    if (req.session.messages) {
+      req.session.messages.unshift(req.body.message)
+    } else {
+      req.session.messages = []
+      req.session.messages.unshift(req.body.message)
+    }
+    // messages.unshift(req.body.message)
+    res.status(200).send(req.session.messages)
   }
 }

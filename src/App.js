@@ -37,7 +37,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Send the things</h1>
+          <h1>Antisocial Network</h1>
         </header>
         <div className="messages">
           {this.state.messages.map((message, i) => (
